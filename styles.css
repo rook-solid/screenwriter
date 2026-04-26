@@ -22,7 +22,7 @@
     /* Spacing & Layout */
     --max-width: 1024px;
     --nav-height: 70px;
-    
+
     /* Transitions */
     --t-fast: 0.2s ease;
     --t-normal: 0.3s ease;
@@ -72,20 +72,30 @@ ul {
     padding: 100px 0;
 }
 
-.bg-white { background-color: var(--c-bg-white); }
-.bg-dark { background-color: var(--c-dark); }
+.bg-white {
+    background-color: var(--c-bg-white);
+}
+
+.bg-dark {
+    background-color: var(--c-dark);
+}
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: var(--c-dark);
     line-height: 1.4;
 }
 
-.bg-dark h2, .bg-dark h3 {
+.bg-dark h2,
+.bg-dark h3 {
     color: var(--c-bg-white);
 }
 
-p, .font-sans {
+p,
+.font-sans {
     font-family: var(--font-sans);
 }
 
@@ -132,12 +142,33 @@ p, .font-sans {
 }
 
 /* Icons */
-.icon-xs { width: 16px; height: 16px; }
-.icon-sm { width: 20px; height: 20px; }
-.icon-md { width: 24px; height: 24px; }
-.icon-lg { width: 32px; height: 32px; }
-.text-amber { color: var(--c-amber); }
-.text-emerald { color: var(--c-emerald); }
+.icon-xs {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-sm {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-md {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-lg {
+    width: 32px;
+    height: 32px;
+}
+
+.text-amber {
+    color: var(--c-amber);
+}
+
+.text-emerald {
+    color: var(--c-emerald);
+}
 
 /* ==========================================================================
    Navigation
@@ -284,7 +315,7 @@ p, .font-sans {
     height: 100%;
     max-width: 450px;
     aspect-ratio: 1;
-    background: linear-gradient(135deg, var(--c-amber-light) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(135deg, var(--c-amber-light) 0%, rgba(255, 255, 255, 0) 100%);
     border-radius: 50%;
     z-index: -1;
     opacity: 0.6;
@@ -296,7 +327,7 @@ p, .font-sans {
     max-width: 450px;
     height: auto;
     border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     transform: perspective(1000px) rotateY(-5deg);
     transition: transform var(--t-slow);
 }
@@ -306,8 +337,15 @@ p, .font-sans {
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); opacity: 0.5; }
-    100% { transform: scale(1.05); opacity: 0.8; }
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
 }
 
 /* ==========================================================================
@@ -442,7 +480,7 @@ p, .font-sans {
 
 .work-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
 }
 
 .work-card.hide {
@@ -542,7 +580,7 @@ p, .font-sans {
 
 .service-card {
     background-color: var(--c-dark-light);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 40px;
     position: relative;
@@ -663,18 +701,27 @@ footer {
     transform: translateY(0);
 }
 
-.delay-1 { transition-delay: 0.1s; }
-.delay-2 { transition-delay: 0.2s; }
-.delay-3 { transition-delay: 0.3s; }
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}
 
 /* ==========================================================================
    Responsive Design
    ========================================================================== */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* In a real project, add a mobile menu implementation */
+        display: none;
+        /* In a real project, add a mobile menu implementation */
     }
-    
+
     .mobile-menu-btn {
         display: block;
     }
@@ -698,7 +745,8 @@ footer {
         margin: 0 auto 32px;
     }
 
-    .about-grid, .service-grid {
+    .about-grid,
+    .service-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
