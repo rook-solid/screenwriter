@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="フリーランスシナリオライターのポートフォリオサイト。ゲームシナリオからYouTube動画、ボイスドラマまで、心を動かすストーリーをご提供します。">
+    <title>Name Portfolio | シナリオライター</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Name Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Toggle (Optional) -->
+            <button class="mobile-menu-btn" aria-label="メニューを開く">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-content fade-in-up">
+                <div class="hero-subtitle">
+                    <i data-lucide="feather" class="icon-sm"></i>
+                    <span>Scenario Writer</span>
+                </div>
+                <h1 class="hero-title">物語に命を吹き込む、<br>言葉の紡ぎ手。</h1>
+                <p class="hero-description">
+                    ゲームシナリオからYouTube動画、ボイスドラマまで。<br>
+                    キャラクターの感情に寄り添い、読み手の心を動かすストーリーをご提供します。
+                </p>
+                <div class="hero-action">
+                    <a href="#contact" class="btn btn-primary">
+                        執筆のご相談はこちら <i data-lucide="chevron-right" class="icon-sm"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper fade-in-up delay-1">
+                <div class="hero-image-bg"></div>
+                <img src="assets/hero.png" alt="アンティークな本と舞い散るページ" class="hero-image">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding bg-white">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text fade-in-up">
+                    <h2 class="section-title">
+                        <span class="title-line"></span> About Me
+                    </h2>
+                    <div class="about-content">
+                        <p>はじめまして。フリーランスのシナリオライターとして活動している[あなたのお名前]と申します。</p>
+                        <p>本業ではIT企業でディレクターを務めており、プロジェクトの進行管理やクライアント折衝の経験があります。そのため、「納期厳守」「スムーズで意図を汲み取ったコミュニケーション」には自信があります。</p>
+                        <p>得意なジャンルは「ダークファンタジー」「現代ヒューマンドラマ」ですが、ご要望に合わせて柔軟なトーン＆マナーで執筆可能です。</p>
+                    </div>
+                </div>
+
+                <div class="about-status fade-in-up delay-1">
+                    <h3 class="status-title">
+                        <i data-lucide="clock" class="icon-md text-amber"></i>
+                        稼働状況・ご連絡について
+                    </h3>
+                    <ul class="status-list">
+                        <li>
+                            <i data-lucide="check-circle-2" class="icon-sm text-emerald mt-1"></i>
+                            <div class="status-item-content">
+                                <strong>現在のリソース</strong>
+                                <p>新規のご依頼は[〇月]より着手可能です。単発・継続問わずご相談ください。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle-2" class="icon-sm text-emerald mt-1"></i>
+                            <div class="status-item-content">
+                                <strong>作業時間</strong>
+                                <p>平日：20:00〜24:00<br>土日祝：終日（週15〜20時間程度）</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle-2" class="icon-sm text-emerald mt-1"></i>
+                            <div class="status-item-content">
+                                <strong>ご連絡へのレスポンス</strong>
+                                <p>基本的には24時間以内にご返信いたします。平日日中でも、メッセージの確認と簡単な返信は可能です。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="works section-padding">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 class="section-title-center">Works</h2>
+                <p class="section-subtitle">これまでの執筆実績（※公開許可をいただいたものの一部です）</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs fade-in-up delay-1">
+                <button class="filter-btn active" data-filter="all">すべて</button>
+                <button class="filter-btn" data-filter="game">ゲームシナリオ</button>
+                <button class="filter-btn" data-filter="youtube">YouTube動画</button>
+                <button class="filter-btn" data-filter="voice">ボイスドラマ</button>
+            </div>
+
+            <!-- Works Grid -->
+            <div class="works-grid">
+                <!-- Work Item 1 -->
+                <article class="work-card fade-in-up" data-category="game">
+                    <div class="work-card-content">
+                        <span class="work-badge">RPG / SF</span>
+                        <h3 class="work-title">サイバーパンクRPG<br>『ネオン・パラドックス』</h3>
+                        
+                        <div class="work-details">
+                            <div class="detail-row">
+                                <span class="detail-label">担当</span>
+                                <span class="detail-value">メインシナリオ / キャラクター設定</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">文字数</span>
+                                <span class="detail-value">約15万文字</span>
+                            </div>
+                            <p class="work-desc">
+                                インディーゲーム開発サークル様の新作RPG。退廃的な近未来を舞台にした群像劇のシナリオを担当しました。マルチエンディングの実装にあたり、複雑なフラグ管理を考慮した執筆を行っています。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work-card-footer">
+                        <a href="#" class="work-link">詳細を見る <i data-lucide="chevron-right" class="icon-xs"></i></a>
+                    </div>
+                </article>
+
+                <!-- Work Item 2 -->
+                <article class="work-card fade-in-up" data-category="youtube">
+                    <div class="work-card-content">
+                        <span class="work-badge">恋愛ミステリー / スカッと系</span>
+                        <h3 class="work-title">YouTube漫画アニメ<br>『復讐の令嬢』</h3>
+                        
+                        <div class="work-details">
+                            <div class="detail-row">
+                                <span class="detail-label">担当</span>
+                                <span class="detail-value">プロット作成 / スクリプト執筆</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">文字数</span>
+                                <span class="detail-value">1話約3,000文字 × 5話</span>
+                            </div>
+                            <p class="work-desc">
+                                登録者50万人越えのYouTubeチャンネル向けシナリオ。視聴維持率を高めるため、最初の30秒でのフックと、テンポの良い会話劇を意識して執筆しました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work-card-footer">
+                        <a href="#" class="work-link">詳細を見る <i data-lucide="chevron-right" class="icon-xs"></i></a>
+                    </div>
+                </article>
+
+                <!-- Work Item 3 -->
+                <article class="work-card fade-in-up" data-category="voice">
+                    <div class="work-card-content">
+                        <span class="work-badge">現代 / 癒やし</span>
+                        <h3 class="work-title">シチュエーションボイスドラマ<br>『雨音の喫茶店』</h3>
+                        
+                        <div class="work-details">
+                            <div class="detail-row">
+                                <span class="detail-label">担当</span>
+                                <span class="detail-value">シナリオ執筆 / バイノーラル指示</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">文字数</span>
+                                <span class="detail-value">約1万文字（約30分尺）</span>
+                            </div>
+                            <p class="work-desc">
+                                同人音声作品のシナリオ。SE（環境音）の指定や、バイノーラルマイクの左右の距離感を台本に緻密に記載し、没入感のある音響体験をサポートしました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work-card-footer">
+                        <a href="#" class="work-link">詳細を見る <i data-lucide="chevron-right" class="icon-xs"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="works-note fade-in-up">
+                <p>※守秘義務の都合上、こちらに掲載していない実績（企業様向け非公開案件など）も多数ございます。<br>詳細なポートフォリオ（PDF）はお問い合わせいただければ個別にお送りいたします。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section id="service" class="service section-padding bg-dark text-white">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 class="section-title-center text-white">Service & Price</h2>
+                <p class="section-subtitle text-slate-400">ご依頼の目安</p>
+            </div>
+
+            <div class="service-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card fade-in-up">
+                    <i data-lucide="file-text" class="service-icon"></i>
+                    <h3 class="service-title">プロット作成</h3>
+                    <p class="service-price">10,000円〜</p>
+                    <p class="service-desc">
+                        ご提供いただいたアイデアや設定をもとに、起承転結を整理した詳細なプロットを作成します。
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card popular fade-in-up delay-1">
+                    <div class="popular-badge">一番人気</div>
+                    <i data-lucide="feather" class="service-icon"></i>
+                    <h3 class="service-title">シナリオ執筆</h3>
+                    <p class="service-price">1文字 2.0円〜</p>
+                    <p class="service-desc">
+                        ゲームシナリオ、ボイスドラマ、動画用スクリプト等の執筆を行います。ト書きや演出指定も料金に含まれます。
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card fade-in-up delay-2">
+                    <i data-lucide="book-open" class="service-icon"></i>
+                    <h3 class="service-title">世界観・キャラ設定</h3>
+                    <p class="service-price">要相談</p>
+                    <p class="service-desc">
+                        ゼロからの企画立ち上げのお手伝い。キャラクターのバックボーンや相関図、用語集などの作成を承ります。
+                    </p>
+                </div>
+            </div>
+            
+            <p class="service-note fade-in-up delay-3">
+                ※料金はあくまで目安です。ご予算に合わせたご提案も可能ですので、お気軽にご相談ください。
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding bg-white">
+        <div class="container contact-container text-center fade-in-up">
+            <i data-lucide="mail" class="contact-icon"></i>
+            <h2 class="section-title-center">お問い合わせ</h2>
+            <p class="contact-desc">
+                ご依頼、お見積もりのご相談など、お気軽にお問い合わせください。<br>
+                まずはヒアリングのみ、といったご相談も歓迎いたします。
+            </p>
+            <a href="mailto:your-email@example.com" class="btn btn-primary btn-large">
+                メールで問い合わせる
+            </a>
+            
+            <div class="social-links">
+                <a href="#" aria-label="X (Twitter)">X (Twitter)</a>
+                <a href="#" aria-label="Note">Note</a>
+                <a href="#" aria-label="CrowdWorks">CrowdWorks</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
